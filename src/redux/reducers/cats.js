@@ -10,7 +10,11 @@ const initialState = {
   cat: { name: 'Marley', description: 'Ocicat', img: 'https://www.pets4homes.co.uk/images/breeds/116/large/91e94b7e726f19ff3973de575ec1520c.jpg' },
 }
 
+<<<<<<< HEAD
 export default function cats(state = initialState, action) {
+=======
+export default function todos(state = initialState, action) {
+>>>>>>> 0aa5dc35c1453463dd4cd27bb5bd50f6e40d3414
   const randomCat = () => {
     return state.cats[_.random(0, state.cats.length - 1)]
   }
