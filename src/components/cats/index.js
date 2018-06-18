@@ -3,6 +3,6 @@ import Cat from './cat'
 
 export default props => (
   <div>
-    <Cat onRandomCat={() => props.onRandomCat()} currentCat={props.currentCat} />
+    <Cat onRandomCat={props.onRandomCat} currentCat={props.currentCat} />
   </div>
 )
