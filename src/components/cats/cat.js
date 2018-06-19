@@ -4,7 +4,7 @@ export default props => (
   <div>
     <h1>{props.currentCat.name}</h1>
 
-    <img src={props.currentCat.img} width="50%" height="50%" />
+    <img src={props.currentCat.img} width="60%" height="60%" />
 
     <p>{props.currentCat.description}</p>
 
