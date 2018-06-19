@@ -1,1 +1,1 @@
-export const onRandomCat = () => ({ type: 'cats/RANDOM_CAT' })
+export const onCat = () => ({ type: 'cats/CAT' })

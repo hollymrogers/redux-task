@@ -8,6 +8,6 @@ export default props => (
 
     <p>{props.currentCat.description}</p>
 
-    <button onClick={() => props.onRandomCat()}>Random Cat</button>
+    <button onClick={() => props.onCat()}>Random Cat</button>
   </div>
 )
