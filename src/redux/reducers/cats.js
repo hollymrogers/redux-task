@@ -16,7 +16,7 @@ export default function todos(state = initialState, action) {
   }
 
   switch (action.type) {
-    case 'todos/RANDOM_CAT':
+    case 'cats/RANDOM_CAT':
       return { ...state, cat: randomCat() }
     default:
       return state
