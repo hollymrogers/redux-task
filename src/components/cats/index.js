@@ -8,6 +8,11 @@ export default props => (
 
     <p>{props.currentCat.description}</p>
 
+    <img src={props.currentAdopt.img} width="50%" height="50%" />
+
     <button onClick={() => props.onCat()}>Random Cat</button>
+
+    <button onClick={() => props.onCatAdopt()}>Adopt</button>
+
   </div>
 )

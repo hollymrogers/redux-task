@@ -1,13 +1,24 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { onCat } from 'redux/actions/cats'
+import { onCat, onCatAdopt } from 'redux/actions/cats'
+
 
 import Cat from 'components/cats'
+import CatAdopt from 'components/cats'
+
 
 class CatContainer extends Component {
   render() {
-    return <Cat onCat={() => this.props.dispatch(onCat())} currentCat={this.props.cat} />
+    return (<Cat 
+
+    onCat={() => this.props.dispatch(onCat())} currentCat={this.props.cat} 
+    onCatAdopt={() => this.props.dispatch(onCatAdopt())} currentAdopt={this.props.adopt}
+  
+
+	    />
+    )
   }
 }
 
 export default connect(state => state.cats)(CatContainer)
+
