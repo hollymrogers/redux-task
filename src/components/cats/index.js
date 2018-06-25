@@ -1,4 +1,5 @@
 import React from 'react'
+import adoptedCats from 'redux/reducers/cats'
 
 export default props => (
   <div>
@@ -16,4 +17,3 @@ export default props => (
 
   </div>
 )
-

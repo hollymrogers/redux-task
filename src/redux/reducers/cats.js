@@ -19,12 +19,13 @@ export default function cats(state = initialState, action) {
   switch (action.type) {
     case 'cats/RANDOM_CAT':
       return { ...state, cat: randomCat() }
-      return state
 
     case 'cats/ADOPT_CAT':
       return {
         ...state,
         adoptedCats: state.adoptedCats.concat(action.ADOPT_CAT),
       }
+    default:
+      return state
   }
 }
