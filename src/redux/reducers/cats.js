@@ -8,6 +8,7 @@ const initialState = {
     { name: 'Graham', description: 'Ragdoll', img: 'https://www.pets4homes.co.uk/images/breeds/28/large/28b9defa5a9609f4d99b38e1c67424f3.jpg' },
   ],
   cat: { name: 'Marley', description: 'Ocicat', img: 'https://www.pets4homes.co.uk/images/breeds/116/large/91e94b7e726f19ff3973de575ec1520c.jpg' },
+  adoptedCats: [],
 }
 
 export default function cats(state = initialState, action) {
@@ -18,6 +19,12 @@ export default function cats(state = initialState, action) {
   switch (action.type) {
     case 'cats/RANDOM_CAT':
       return { ...state, cat: randomCat() }
+
+    case 'cats/ADOPT_CAT':
+      return {
+        ...state,
+        adoptedCats: state.adoptedCats.concat(action.payload),
+      }
     default:
       return state
   }
