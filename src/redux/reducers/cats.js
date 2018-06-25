@@ -23,7 +23,7 @@ export default function cats(state = initialState, action) {
     case 'cats/ADOPT_CAT':
       return {
         ...state,
-        adoptedCats: state.adoptedCats.concat(action.ADOPT_CAT),
+        adoptedCats: state.adoptedCats.concat(action.payload),
       }
     default:
       return state

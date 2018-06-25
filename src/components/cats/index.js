@@ -1,5 +1,4 @@
 import React from 'react'
-import adoptedCats from 'redux/reducers/cats'
 
 export default props => (
   <div>
@@ -9,11 +8,11 @@ export default props => (
 
     <p>{props.currentCat.description}</p>
 
-    <img src={[adoptedCats]} />
+    <img src={[props.adoptedCats]} src2={[props.adoptedCats]} src3={[props.adoptedCats]} src4={[props.adoptedCats]} />
 
     <button onClick={() => props.onCat()}>Random Cat</button>
 
-    <button onClick={() => props.onCatAdopt()}>Adopt</button>
+    <button onClick={() => props.onAdoptedCats()}>Adopt</button>
 
   </div>
 )
